@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling
+FROM --platform=linux/amd64 kalilinux/kali-rolling
 
 RUN echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list && \
 echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
